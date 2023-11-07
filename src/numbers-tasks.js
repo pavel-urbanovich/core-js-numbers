@@ -331,8 +331,12 @@ function getSumOfDigits(num) {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo(/* num */) {
-  throw new Error('Not implemented');
+function isPowerOfTwo(num) {
+  // throw new Error('Not implemented');
+  if (Number.isInteger(Math.log2(num))) {
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -345,8 +349,9 @@ function isPowerOfTwo(/* num */) {
  *   0 => 0
  *   Math.PI / 2 => 1
  */
-function getSine(/* num */) {
-  throw new Error('Not implemented');
+function getSine(num) {
+  // throw new Error('Not implemented');
+  return Math.sin(num);
 }
 
 /**
@@ -360,8 +365,9 @@ function getSine(/* num */) {
  * 255, 16 => 'ff'
  * 2, 2    => '10'
  */
-function numberToStringInBase(/* number, base */) {
-  throw new Error('Not implemented');
+function numberToStringInBase(number, base) {
+  // throw new Error('Not implemented');
+  return number.toString(base);
 }
 
 /**
